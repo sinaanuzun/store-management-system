@@ -1,7 +1,8 @@
 package com.sinan.productservice.service;
 
-import com.sinan.productservice.dto.ProductRequest;
-import com.sinan.productservice.dto.ProductResponse;
+import com.sinan.productservice.dto.converter.ProductConverter;
+import com.sinan.productservice.dto.request.ProductRequest;
+import com.sinan.productservice.dto.ProductDto;
 import com.sinan.productservice.model.Product;
 import com.sinan.productservice.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
@@ -17,6 +18,7 @@ import java.util.stream.Collectors;
 public class ProductService {
 
     private final ProductRepository productRepository;
+    private final ProductConverter productConverter;
 
     public void createProduct(ProductRequest request){
         Product product = Product.builder()
@@ -29,20 +31,10 @@ public class ProductService {
         log.info("Product {} is saved", product.getId() + " " + product.getName());
     }
 
-    public List<ProductResponse> getProducts(){
+    public List<ProductDto> getProducts(){
         List<Product> products = productRepository.findAll();
 
-        return products.stream()
-                .map(this::productResponse)
-                .collect(Collectors.toList());
+        return productConverter.convertDtoList(products);
     }
 
-    public ProductResponse productResponse(Product product){
-        return ProductResponse.builder()
-                .id(product.getId())
-                .name(product.getName())
-                .description(product.getDescription())
-                .price(product.getPrice())
-                .build();
-    }
 }
