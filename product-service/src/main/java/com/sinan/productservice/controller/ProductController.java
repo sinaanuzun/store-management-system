@@ -32,5 +32,12 @@ public class ProductController {
         return ResponseEntity.ok(productService.getProducts());
     }
 
-}
+    @DeleteMapping("/{id}")
+    public ResponseEntity<?> deletePost(@PathVariable(name = "id") String id){
 
+        productService.delete(id);
+
+        return new ResponseEntity<>("Post entity deleted successfully.", HttpStatus.OK);
+    }
+
+}
