@@ -43,6 +43,7 @@ public class ProductService {
         Product product = productRepository.findById(id)
                 .orElseThrow(() -> new IdNotFoundException("ID Not found : " + id));
         productRepository.delete(product);
+        log.info("Product {} has been successfully deleted", product.getId() + " " + product.getName());
     }
 
 }
