@@ -1,9 +1,0 @@
-
-\
-java:S1128"?Remove this unused import 'jakarta.persistence.GeneratedValue'.(‘ŒÇŒ8´Ý¹®¹1
-\
-java:S1128"?Remove this unused import 'jakarta.persistence.GenerationType'.(²ºëÊ8µÝ¹®¹1
-P
-java:S1128"3Remove this unused import 'jakarta.persistence.Id'.(š¨ô 8µÝ¹®¹1
-V
-java:S1128"4Remove this unused import 'java.time.LocalDateTime'.(æÃ§ƒüÿÿÿÿ8¢ë „¹1

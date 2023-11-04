@@ -39,6 +39,5 @@ public class ProductController {
 
         return new ResponseEntity<>("Post entity deleted successfully.", HttpStatus.OK);
     }
-
 }
 
