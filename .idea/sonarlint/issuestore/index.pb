@@ -115,3 +115,17 @@ aproduct-service/src/main/java/com/sinan/productservice/exception/generic/IdNotF
 ]product-service/src/main/java/com/sinan/productservice/exception/GeneralExceptionHandler.java,1\2\12f038151be05ef39743ac0ed1d8306adf200d9f
 |
 Lproduct-service/src/main/java/com/sinan/productservice/model/BaseEntity.java,f\e\fe79d7e254c8f5f293e52a65afdb4b50c3bb17e7
+q
+Auser-service/src/main/java/com/sinan/userservice/entity/User.java,6\2\6205914ddf343895c80fdaa04673dabf75a9f545
+
+Ouser-service/src/main/java/com/sinan/userservice/controller/UserController.java,1\f\1f8cd163b923f7ea6658bfa3b1d6f428aee26b11
+q
+Auser-service/src/main/java/com/sinan/userservice/dto/UserDto.java,2\8\2890aa5a0cb7162db4323783a7f32c3b2f005406
+
+Ouser-service/src/main/java/com/sinan/userservice/repository/UserRepository.java,a\a\aaf3f941449fecb2790207995c4c76e4466c0500
+y
+Iuser-service/src/main/java/com/sinan/userservice/service/UserService.java,f\c\fcaf89ef0ab33ba5e555527aa9f1e58e30a5318b
+B
+docker-compose.yml,3\5\35b8c13cf2eb2a194eada000eb310d65aed53b2a
+t
+Dapi-gateway/src/main/java/com/sinan/apigateway/APIGatewayConfig.java,b\5\b56ce89da9615f8d22913c102db7c99469bbfbc5

@@ -34,8 +34,9 @@ public class ProductService {
 
     public List<ProductDto> getProducts(){
         List<Product> products = productRepository.findAll();
-
+        log.info("All products brought.");
         return productConverter.convertDtoList(products);
+
     }
 
     @Transactional

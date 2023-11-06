@@ -1,21 +1,20 @@
-version: '3'
-
+version: '3.3'
 services:
-  mysql:
-    image: mysql:5.7
+  db:
+    container_name: product-service
+    image: mysql:latest
+    restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: product-service
-      MYSQL_USER: root
-      MYSQL_PASSWORD: password
+      MYSQL_DATABASE: 'product-service'
+      MYSQL_USER: 'root'
+      MYSQL_PASSWORD: 'password'
+      MYSQL_ROOT_PASSWORD: 'password'
     ports:
-      - "3307:3306"
+      - '3307:3306'
+    expose:
+      - '3306'
     volumes:
-      - /var/lib/mysql:/var/lib/mysql
+      - my-db:/var/lib/mysql
 
-  app:
-    build: .
-    ports:
-      - "8081:8080"
-    depends_on:
-      - mysql
+volumes:
+  my-db:

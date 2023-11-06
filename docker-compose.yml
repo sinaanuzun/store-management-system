@@ -1,11 +1,11 @@
 version: '3.3'
 services:
   db:
-    container_name: user-service
+    container_name: store-management-system
     image: mysql:latest
     restart: always
     environment:
-      MYSQL_DATABASE: 'user-service'
+      MYSQL_DATABASE: 'store-management-system'
       MYSQL_USER: 'root'
       MYSQL_PASSWORD: 'password'
       MYSQL_ROOT_PASSWORD: 'password'
@@ -15,6 +15,5 @@ services:
       - '3306'
     volumes:
       - my-db:/var/lib/mysql
-# Names our volume
 volumes:
   my-db:
