@@ -129,3 +129,7 @@ B
 docker-compose.yml,3\5\35b8c13cf2eb2a194eada000eb310d65aed53b2a
 t
 Dapi-gateway/src/main/java/com/sinan/apigateway/APIGatewayConfig.java,b\5\b56ce89da9615f8d22913c102db7c99469bbfbc5
+ç
+]user-service/src/main/java/com/sinan/userservice/exception/generic/UserNotFoundException.java,b\7\b76315ac314c0559f49d9daebedd9192e8583ae0
+á
+Wuser-service/src/main/java/com/sinan/userservice/exception/GeneralExceptionHandler.java,5\1\51c5da1f8ea317963454ba69a562612e9941ebf1

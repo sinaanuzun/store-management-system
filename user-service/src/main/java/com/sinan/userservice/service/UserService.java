@@ -5,11 +5,13 @@ import com.sinan.userservice.entity.User;
 import com.sinan.userservice.exception.generic.UserNotFoundException;
 import com.sinan.userservice.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
+@Slf4j
 public class UserService {
 
     private final UserRepository userRepository;
@@ -25,4 +27,8 @@ public class UserService {
                 .orElseThrow(() -> new UserNotFoundException("Invalid Username!: " + username));
     }
 
+    public void deleteUser(String id) {
+        this.userRepository.deleteById(id);
+        log.info("ID deleted : " + id);
+    }
 }
