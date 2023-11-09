@@ -7,6 +7,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RequestMapping("/api/v1/users")
 @RestController
 @CrossOrigin
@@ -28,9 +30,14 @@ public class UserController {
         return userService.findUser(username);
     }
 
-    @DeleteMapping("/{id}")
-    public ResponseEntity<?> deleteUsers(@PathVariable String id) {
-        this.userService.deleteUser(id);
+    @GetMapping(produces = "application/json")
+    public List<UserDto> getAllUsers() {
+        return userService.getAllUsers();
+    }
+
+    @DeleteMapping("/{username}")
+    public ResponseEntity<?> deleteUser(@PathVariable String username) {
+        userService.deleteUser(username);
         return ResponseEntity.ok().build();
     }
 }

@@ -4,10 +4,14 @@ import com.sinan.userservice.dto.UserDto;
 import com.sinan.userservice.entity.User;
 import com.sinan.userservice.exception.generic.UserNotFoundException;
 import com.sinan.userservice.repository.UserRepository;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -27,8 +31,17 @@ public class UserService {
                 .orElseThrow(() -> new UserNotFoundException("Invalid Username!: " + username));
     }
 
-    public void deleteUser(String id) {
-        this.userRepository.deleteById(id);
-        log.info("ID deleted : " + id);
+    public List<UserDto> getAllUsers() {
+        return ((List<User>) userRepository.findAll())
+                .stream()
+                .map(user -> new UserDto(user.getUsername(), user.getPassword(), user.getRole()))
+                .collect(Collectors.toList());
     }
+
+    @Transactional
+    public void deleteUser(String username) {
+        this.userRepository.deleteByUsername(username);
+        log.info("Username deleted : " + username);
+    }
+
 }
