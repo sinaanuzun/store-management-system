@@ -3,10 +3,12 @@ package com.sinan.userservice.entity;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
@@ -16,4 +18,9 @@ public class User {
     private String username;
     private String password;
     private String role;
+
+
+    public User(String username) {
+        this.username = username;
+    }
 }

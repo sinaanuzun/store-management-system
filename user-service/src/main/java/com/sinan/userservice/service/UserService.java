@@ -40,8 +40,13 @@ public class UserService {
 
     @Transactional
     public void deleteUser(String username) {
-        this.userRepository.deleteByUsername(username);
-        log.info("Username deleted : " + username);
+        User user = getByUsername(username);
+        userRepository.deleteByUsername(user.getUsername());
+
     }
 
+    private User getByUsername(String username) {
+        return userRepository.findUserByUsername(username)
+                .orElseThrow(() -> new UserNotFoundException("user not found, username: " + username));
+    }
 }

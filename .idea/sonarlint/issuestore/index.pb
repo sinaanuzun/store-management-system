@@ -133,3 +133,5 @@ Dapi-gateway/src/main/java/com/sinan/apigateway/APIGatewayConfig.java,b\5\b56ce
 Wuser-service/src/main/java/com/sinan/userservice/exception/GeneralExceptionHandler.java,5\1\51c5da1f8ea317963454ba69a562612e9941ebf1
 ç
 ]user-service/src/main/java/com/sinan/userservice/exception/generic/UserNotFoundException.java,b\7\b76315ac314c0559f49d9daebedd9192e8583ae0
+Ä
+Puser-service/src/main/java/com/sinan/userservice/exception/GeneralException.java,6\5\65a141e3a942f3e4e70d3f78d836f47ed5a17537

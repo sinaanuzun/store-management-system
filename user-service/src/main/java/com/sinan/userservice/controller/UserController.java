@@ -17,7 +17,6 @@ public class UserController {
 
     private final UserService userService;
 
-
     @PostMapping(consumes = "application/json")
     public ResponseEntity<String> saveUser(@RequestBody UserDto user) {
         userService.saveUser(user);
@@ -36,8 +35,10 @@ public class UserController {
     }
 
     @DeleteMapping("/{username}")
-    public ResponseEntity<?> deleteUser(@PathVariable String username) {
+    public ResponseEntity<?> delete(@PathVariable String username) {
         userService.deleteUser(username);
-        return ResponseEntity.ok().build();
+        return ResponseEntity.ok("User deleted successfully");
+
     }
+
 }
