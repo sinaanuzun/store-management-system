@@ -1,6 +1,9 @@
 package com.sinan.userservice.dto;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.io.Serializable;
 
@@ -13,5 +16,6 @@ public class UserDto implements Serializable {
     private String username;
     private String password;
     private String role;
+
 }
 

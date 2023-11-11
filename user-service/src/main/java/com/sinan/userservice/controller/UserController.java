@@ -18,7 +18,7 @@ public class UserController {
     private final UserService userService;
 
     @PostMapping(consumes = "application/json")
-    public ResponseEntity<String> saveUser(@RequestBody UserDto user) {
+    public ResponseEntity<?> saveUser(@RequestBody UserDto user) {
         userService.saveUser(user);
         return new ResponseEntity<>("User created successfully", HttpStatus.CREATED);
     }
