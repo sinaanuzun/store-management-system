@@ -135,3 +135,7 @@ Dapi-gateway/src/main/java/com/sinan/apigateway/APIGatewayConfig.java,b\5\b56ce
 Wuser-service/src/main/java/com/sinan/userservice/exception/GeneralExceptionHandler.java,5\1\51c5da1f8ea317963454ba69a562612e9941ebf1
 Ä
 Puser-service/src/main/java/com/sinan/userservice/exception/GeneralException.java,6\5\65a141e3a942f3e4e70d3f78d836f47ed5a17537
+Å
+Quser-service/src/test/java/com/sinan/userservice/UserServiceApplicationTests.java,0\a\0ad6c61d056c906246e7e04a0cbbf9437769b5df
+}
+Muser-service/src/test/java/com/sinan/userservice/service/UserServiceTest.java,5\f\5fb52885330526b39996a07ce4b0bdd723fe8bdf
