@@ -139,3 +139,5 @@ Puser-service/src/main/java/com/sinan/userservice/exception/GeneralException.jav
 Quser-service/src/test/java/com/sinan/userservice/UserServiceApplicationTests.java,0\a\0ad6c61d056c906246e7e04a0cbbf9437769b5df
 }
 Muser-service/src/test/java/com/sinan/userservice/service/UserServiceTest.java,5\f\5fb52885330526b39996a07ce4b0bdd723fe8bdf
+e
+5product-service/.mvn/wrapper/maven-wrapper.properties,1\6\16fcc8277e6cacfe8a9e56c64fc67764bf47be71
