@@ -19,11 +19,12 @@ public class ProductController {
     private final ProductService productService;
 
     @PostMapping
-    public ResponseEntity<?> createProducts(@RequestBody @Valid ProductRequest request){
+    public ResponseEntity<?> createProducts(@Valid @RequestBody ProductRequest request){
         productService.createProduct(request);
         return ResponseEntity
                 .status(HttpStatus.CREATED)
                 .build();
+
     }
 
     @GetMapping("/all")
