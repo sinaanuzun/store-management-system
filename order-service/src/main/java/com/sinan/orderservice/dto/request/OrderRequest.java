@@ -1,5 +1,6 @@
-package com.sinan.orderservice.dto;
+package com.sinan.orderservice.dto.request;
 
+import com.sinan.orderservice.dto.OrderLineItemsDto;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
