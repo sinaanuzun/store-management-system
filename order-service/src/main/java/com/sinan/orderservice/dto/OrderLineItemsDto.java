@@ -1,19 +1,9 @@
 package com.sinan.orderservice.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-
-@Getter
-@Setter
-@AllArgsConstructor
-@NoArgsConstructor
-public class OrderLineItemsDto {
-    private Long id;
-    private String skuCode;
-    private Double price;
-    private Integer quantity;
-
+public record OrderLineItemsDto(
+        Long id,
+        String skuCode,
+        Double price,
+        Integer quantity
+) {
 }
