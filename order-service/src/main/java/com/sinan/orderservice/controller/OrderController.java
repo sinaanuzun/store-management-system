@@ -11,8 +11,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import static com.sinan.orderservice.constants.OrderConstants.*;
+
 @RestController
-@RequestMapping("/api/v1/order")
+@RequestMapping(API_PREFIX + API_VERSION_V1 + API_ORDER)
 @RequiredArgsConstructor
 @Slf4j
 public class OrderController {

@@ -9,7 +9,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RequestMapping("/api/v1/users")
+import static com.sinan.userservice.constants.UserConstants.*;
+
+@RequestMapping(API_PREFIX + API_VERSION_V1 + API_ORDER)
 @RestController
 @CrossOrigin
 @RequiredArgsConstructor

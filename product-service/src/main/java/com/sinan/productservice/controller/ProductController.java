@@ -11,8 +11,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+import static com.sinan.productservice.constants.ProductConstants.*;
+
 @RestController
-@RequestMapping("/api/v1/product")
+@RequestMapping(API_PREFIX + API_VERSION_V1 + API_ORDER)
 @RequiredArgsConstructor
 public class ProductController {
 
