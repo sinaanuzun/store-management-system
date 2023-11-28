@@ -115,8 +115,6 @@ aproduct-service/src/main/java/com/sinan/productservice/exception/generic/IdNotF
 ]product-service/src/main/java/com/sinan/productservice/exception/GeneralExceptionHandler.java,1\2\12f038151be05ef39743ac0ed1d8306adf200d9f
 |
 Lproduct-service/src/main/java/com/sinan/productservice/model/BaseEntity.java,f\e\fe79d7e254c8f5f293e52a65afdb4b50c3bb17e7
-q
-Auser-service/src/main/java/com/sinan/userservice/entity/User.java,6\2\6205914ddf343895c80fdaa04673dabf75a9f545
 
 Ouser-service/src/main/java/com/sinan/userservice/controller/UserController.java,1\f\1f8cd163b923f7ea6658bfa3b1d6f428aee26b11
 q
@@ -167,3 +165,7 @@ Porder-service/src/main/java/com/sinan/orderservice/constants/OrderConstants.jav
 Vproduct-service/src/main/java/com/sinan/productservice/constants/ProductConstants.java,1\5\15f378def86f5e63f583ce3841494e6ae8df2c59
 }
 Muser-service/src/main/java/com/sinan/userservice/constants/UserConstants.java,f\c\fc5858c023d6b585af6694777cc833f86ba63dc1
+p
+@user-service/src/main/java/com/sinan/userservice/model/User.java,f\5\f50ac150919bc458d626e96bb364f65d22423a93
+ƒ
+Suser-service/src/main/java/com/sinan/userservice/dto/request/CreateUserRequest.java,4\0\40d4fc44f5f226dad88ff06ad7082893d45fd0eb

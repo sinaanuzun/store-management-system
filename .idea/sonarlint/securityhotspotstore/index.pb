@@ -123,8 +123,6 @@ Iuser-service/src/main/java/com/sinan/userservice/service/UserService.java,f\c\
 Ouser-service/src/main/java/com/sinan/userservice/controller/UserController.java,1\f\1f8cd163b923f7ea6658bfa3b1d6f428aee26b11
 
 Ouser-service/src/main/java/com/sinan/userservice/repository/UserRepository.java,a\a\aaf3f941449fecb2790207995c4c76e4466c0500
-q
-Auser-service/src/main/java/com/sinan/userservice/entity/User.java,6\2\6205914ddf343895c80fdaa04673dabf75a9f545
 B
 docker-compose.yml,3\5\35b8c13cf2eb2a194eada000eb310d65aed53b2a
 t
@@ -167,3 +165,7 @@ Porder-service/src/main/java/com/sinan/orderservice/constants/OrderConstants.jav
 Vproduct-service/src/main/java/com/sinan/productservice/constants/ProductConstants.java,1\5\15f378def86f5e63f583ce3841494e6ae8df2c59
 }
 Muser-service/src/main/java/com/sinan/userservice/constants/UserConstants.java,f\c\fc5858c023d6b585af6694777cc833f86ba63dc1
+p
+@user-service/src/main/java/com/sinan/userservice/model/User.java,f\5\f50ac150919bc458d626e96bb364f65d22423a93
+ƒ
+Suser-service/src/main/java/com/sinan/userservice/dto/request/CreateUserRequest.java,4\0\40d4fc44f5f226dad88ff06ad7082893d45fd0eb

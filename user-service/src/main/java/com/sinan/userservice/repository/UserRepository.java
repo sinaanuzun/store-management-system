@@ -1,6 +1,6 @@
 package com.sinan.userservice.repository;
 
-import com.sinan.userservice.entity.User;
+import com.sinan.userservice.model.User;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

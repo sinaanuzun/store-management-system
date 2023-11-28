@@ -18,13 +18,13 @@ public class UserServiceTest {
         userService = new UserService(userRepository);
     }
 
-    @Test
-    public void whenUserAccount(){
-        UserDto userDto = new UserDto();
-        userDto.setUsername("test");
-        userDto.setPassword("test");
-        userDto.setRole("test");
-    }
+//    @Test
+//    public void whenUserAccount(){
+//        UserDto userDto = new UserDto();
+//        userDto.setUsername("test");
+//        userDto.setPassword("test");
+//        userDto.setRole("test");
+//    }
 
 
 }

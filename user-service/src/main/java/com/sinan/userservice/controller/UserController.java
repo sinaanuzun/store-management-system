@@ -1,8 +1,11 @@
 package com.sinan.userservice.controller;
 
 import com.sinan.userservice.dto.UserDto;
+import com.sinan.userservice.dto.request.CreateUserRequest;
 import com.sinan.userservice.service.UserService;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -11,20 +14,21 @@ import java.util.List;
 
 import static com.sinan.userservice.constants.UserConstants.*;
 
-@RequestMapping(API_PREFIX + API_VERSION_V1 + API_ORDER)
 @RestController
-@CrossOrigin
+@RequestMapping(API_PREFIX + API_VERSION_V1 + API_ORDER)
 @RequiredArgsConstructor
+@CrossOrigin
+@Slf4j
 public class UserController {
 
     private final UserService userService;
 
     @PostMapping(consumes = "application/json")
-    public ResponseEntity<?> saveUser(@RequestBody UserDto user) {
+    public ResponseEntity<UserDto> saveUser(@RequestBody @Valid CreateUserRequest user) {
+        log.info("save user method entry :{}", user.getUsername());
         userService.saveUser(user);
-        return new ResponseEntity<>("User created successfully", HttpStatus.CREATED);
+        return ResponseEntity.ok().build();
     }
-
 
     @GetMapping(produces = "application/json", value = "/{username}")
     public UserDto getUser(@PathVariable String username){
@@ -39,7 +43,7 @@ public class UserController {
     @DeleteMapping("/{username}")
     public ResponseEntity<?> delete(@PathVariable String username) {
         userService.deleteUser(username);
-        return ResponseEntity.ok("User deleted successfully");
+        return ResponseEntity.ok().build();
 
     }
 
