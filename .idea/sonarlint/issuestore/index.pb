@@ -169,3 +169,5 @@ p
 @user-service/src/main/java/com/sinan/userservice/model/User.java,f\5\f50ac150919bc458d626e96bb364f65d22423a93
 ƒ
 Suser-service/src/main/java/com/sinan/userservice/dto/request/CreateUserRequest.java,4\0\40d4fc44f5f226dad88ff06ad7082893d45fd0eb
+{
+Kuser-service/src/main/java/com/sinan/userservice/config/SecurityConfig.java,a\7\a71ed08e580251d154e66b2657853e896846bc69
