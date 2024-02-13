@@ -24,14 +24,15 @@ public class UserController {
 
     @PostMapping(consumes = "application/json")
     public ResponseEntity<UserDto> saveUser(@RequestBody @Valid CreateUserRequest user) {
-        log.info("save user method entry :{}", user.getUsername());
+        log.info("save user method entry: {}", user.getUsername());
         userService.saveUser(user);
         return ResponseEntity.ok().build();
     }
 
     @GetMapping(produces = "application/json", value = "/{username}")
-    public UserDto getUser(@PathVariable String username){
-        return userService.findUser(username);
+    public ResponseEntity<UserDto> getUser(@PathVariable String username) {
+        UserDto userDto = userService.findUser(username);
+        return ResponseEntity.ok(userDto);
     }
 
     @GetMapping(produces = "application/json")

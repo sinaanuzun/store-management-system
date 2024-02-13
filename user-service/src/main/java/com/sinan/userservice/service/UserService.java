@@ -40,13 +40,13 @@ public class UserService {
                 .collect(Collectors.toList());
     }
 
-    @Transactional
-    public void deleteUser(String username) {
-        User user = getByUsername(username);
-        log.info("User deleted successfully :{}", username);
-        userRepository.deleteByUsername(user.getUsername());
+        @Transactional
+        public void deleteUser(String username) {
+            User user = getByUsername(username);
+            log.info("User deleted successfully :{}", username);
+            userRepository.deleteByUsername(user.getUsername());
 
-    }
+        }
 
     private User getByUsername(String username) {
         return userRepository.findUserByUsername(username)

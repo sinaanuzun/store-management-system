@@ -169,5 +169,11 @@ p
 @user-service/src/main/java/com/sinan/userservice/model/User.java,f\5\f50ac150919bc458d626e96bb364f65d22423a93
 ƒ
 Suser-service/src/main/java/com/sinan/userservice/dto/request/CreateUserRequest.java,4\0\40d4fc44f5f226dad88ff06ad7082893d45fd0eb
-{
-Kuser-service/src/main/java/com/sinan/userservice/config/SecurityConfig.java,a\7\a71ed08e580251d154e66b2657853e896846bc69
+~
+Norder-service/src/main/java/com/sinan/orderservice/client/UserFeignClient.java,e\6\e6de96e9a26cf9d54302e75ae599dfb916299fff
+„
+Tproduct-service/src/main/java/com/sinan/productservice/client/UserServiceClient.java,1\9\19fa4b36df6390e14217cf4b994b9a48917c2790
+Š
+Zproduct-service/src/test/java/com/sinan/productservice/ProductServiceApplicationTests.java,d\4\d4834259247967ee8e576091109a9f6bec154f8c
+s
+Cuser-service/src/test/java/com/sinan/userservice/test/testCrud.java,9\5\95f0d8504e2f8fcef2f68d635891639a11cca8dd
