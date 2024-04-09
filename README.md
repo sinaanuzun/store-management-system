@@ -2,7 +2,7 @@
 
 
 
-Technologies To Use:
+Technologies used in the construction of the project:
 - Java 17
 - Spring Boot 3.1.2
 - MySQL Database
